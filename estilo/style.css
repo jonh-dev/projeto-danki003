@@ -66,6 +66,8 @@ header nav.mobile{
 
 header nav.desktop ul{
     display: flex;
+    gap: 20px;
+    text-transform: uppercase;
     list-style: none;
 }
 
@@ -445,14 +447,22 @@ footer{
     background-color: #1a2124;
 }
 
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+
 .rodape{
     height: 100px;
     color: white;
     display: flex;
     justify-content: space-around;
-    align-content: center;
     align-items: center;
     border-top: 1px solid rgba(200, 200, 200, 0.219);
+}
+
+.rodape img{
+    width: 150px;
 }
 
 .rodape p{
@@ -501,7 +511,12 @@ footer{
         justify-content: space-between;
     }
 
+    header nav.mobile ul{
+        display: none;
+    }
+
     header nav.mobile ul.menu{
+        height: 100vh;
         width: 100%;
         background-color: #462663be;
         position: absolute;
@@ -514,9 +529,14 @@ footer{
     }
 
     header nav.mobile ul.menu li{
+        text-transform: uppercase;
         width: 100%;
         border-bottom: 2px solid rgba(0, 0, 0, 0.411);
         padding: 10px 0;
+    }
+
+    header nav.mobile ul.menu li:last-child{
+        border-bottom: 0px;
     }
 
     header nav.mobile ul.menu li a{

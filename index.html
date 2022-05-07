@@ -18,9 +18,9 @@
                     <div class="logo-mobile"><img src="imagens/logo1.png" alt="Logo"></div>
                     <ul class="menu">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                     <ul class="button">
                         <li></li>
@@ -33,9 +33,9 @@
                     <img src="imagens/logo1.png" alt="Logo">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav> 
                 
@@ -49,7 +49,7 @@
         
     </header>
     <main>
-        <section class="section-01">
+        <section id="servicos" class="section-01">
             <div class="center">
                 <div class="info">
                     <h2>Desenvolvemos sistemas únicos</h2>
@@ -68,7 +68,7 @@
                 <div class="clear"></div>
             </div>
         </section><!-- Section 01 -->
-        <section class="section-02">
+        <section id="sobre" class="section-02">
             <div class="center">
                 <h2>Desenvolvido de pessoas para pessoas</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci commodo suscipit. Nunc ut viverra dui. Ut efficitur cursus diam a volutpat. Sed sagittis pharetra dolor, ac mollis sapien condimentum vitae. Ut in interdum tortor. 
@@ -108,7 +108,7 @@
 
             <div class="clear"></div>
         </section><!-- Section 03 -->
-        <section class="section-04">
+        <section id="contato" class="section-04">
             <div class="center">
                 <div class="form">
                     <h2>Entre em contato</h2>
@@ -138,11 +138,15 @@
         </section><!-- Section 04 -->
         <footer>
                 <div class="rodape">
-                    <p>Jonh Dev / 41-99509-6991</p>
-                    <p>Todos os direitos reservados. ©️</p>
+                    <p><strong><a href="https://github.com/jonh-dev" target="_blank">Jonh Dev</a></strong> / <a href="mailto:jonh.dev@gmail.com?subject=Assunto&body=Escreva aqui se tiver uma pergunta.">jonh.dev@gmail.com</a></p>
+                    <a href="https://cursos.dankicode.com/home" target="_blank"><img src="imagens/logo1.png" alt="Danki Code"></a>
+                    <p>Todos os direitos reservados.©️</p>
                 </div><!-- Rodape -->
         </footer>
     </main>
-    <script src="js/main.js"></script>
+    <script src="Libs/JQuery.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/menu-responsivo.js"></script>
+    <script src="js/menuScroll.js"></script>
 </body>
 </html>
