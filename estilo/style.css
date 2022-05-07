@@ -254,10 +254,19 @@ section.section-02{
     background: white;
 }
 
-.sobre-autor {
-    float: left;
+.scrollEquipe{
     max-width: 600px;
     padding-left: 30px;
+    overflow: hidden;
+}
+
+.scroll-wraper{
+    width: 100%;
+}
+
+.sobre-autor{
+    float: left;
+    width: 100%;
 }
 
 .titulo-autor {
@@ -307,12 +316,14 @@ section.section-02{
 .section-03 .sliders{
     width: 100%;
     float: left;
-    padding-left: 30px;
     margin-top: 12px;
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 .section-03 .sliders span{
     display: inline-block;
+    margin-right: 5px;
     width: 16px;
     height: 16px;
     border-radius: 8px;
@@ -462,7 +473,7 @@ footer{
 }
 
 .rodape img{
-    width: 150px;
+    width: 130px;
 }
 
 .rodape p{
@@ -486,7 +497,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 968px){
     header{
         width: 100%;
         height: auto;
@@ -649,7 +660,7 @@ footer{
     
     .section-03 .part2{
         width: 100%;
-        padding: 40px;
+        padding: 30px 0;
     }
 
     .section-03 .texto-autor{
@@ -658,17 +669,30 @@ footer{
 
     .sobre-autor {
         max-width: 100%;
-        padding-left: 0px;
     }
     
+    .part2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scrollEquipe{
+        padding-left: 0;
+    }
     .titulo-autor {
         display: flex;
         justify-content: center;
     }
 
-    .section-03 .sliders {
+    .section-03 .sliders {     
         padding-left: 0px;
-    }
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+}
+    
 }
 
 @media screen and (max-width: 866px) {
